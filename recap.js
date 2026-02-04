@@ -17,10 +17,16 @@ const dynamicText = `My Tac: ${tax} and marks ${student.marks*1.2} has friend: $
 // arrow function
 const add2 = (num1, num2 = 0) => num1 + num2;
 // spreac 
+const newFriends = [...friends];
+console.log(newFriends);
+
+// add new item
+const updatedFriends = [...friends, "dabul"];
+console.log(updatedFriends);
 
 
 // destructuring
-// const {marks, age=0} = student;
-// console.log(marks, age)
+const {marks, age = 0 } = student;
+console.log(marks, age)
 
-// const [firstFriend] = friends;
+const [firstFriend] = friends;
