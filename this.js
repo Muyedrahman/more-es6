@@ -13,11 +13,12 @@ class Vehicle{
 }
 const car1 = new Vehicle('car','Honda',500000);
 const car2 = new Vehicle("car", "Toyota", 400000);
-// car1.getThis();
+car1.getThis();
+console.log(car1)
 // car2.getPrice();
 
-// console.log(car2.getPrice())
-// console.log(car1.getPrice())
+console.log(car2.getPrice())
+console.log(car1.getPrice())
 
 const student = {
     name: 'Rahul dravid',
