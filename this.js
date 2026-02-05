@@ -1,11 +1,16 @@
 class Vehicle{
+    #tin;
     constructor(type,brand ,price){
         this.type = type;
         this.brand = brand;
         this.price = price;
+        this.#tin = '12435Q2SASOG'
     }
     getThis(){
         console.log(this)
+    }
+    getTin(){
+        return this.#tin;
     }
     getPrice (){
         return this.price
