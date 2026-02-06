@@ -38,3 +38,27 @@ const student = {
 student.getScore();
 student.getScoreArrow();
 console.log('ultimate thix', this)
+// 11
+const person = {
+  name: "Muyeed",
+  sayName() {
+    console.log(this.name);
+  },
+};
+
+person.sayName();
+
+const fn = person.sayName;
+fn();
+
+// 12
+const user = {
+  name: "Rahul",
+  greet() {
+    setTimeout(function () {
+      console.log(this.name);
+    }, 1000);
+  },
+};
+
+user.greet();
